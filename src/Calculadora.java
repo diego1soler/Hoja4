@@ -25,15 +25,15 @@ public class Calculadora implements I_Calculadora {
 	*@param String: vector
 	*/
 	@Override
-	public int CalcularVector(String vector) {
+	public int CalcularVector(String direccion,StackVector<Integer> vector) {
 		
 		int resultado = 0;
 		
-		String [] cadena = vector.split(" "); //Se convierte la operacion en un array de caracteres, exceptuando el espacio entre operadores
+		String [] cadena = direccion.split(" "); //Se convierte la operacion en un array de caracteres, exceptuando el espacio entre operadores
 		for (int x = 0; x<cadena.length; x++){
 			
 			try{
-				miPila.Push(Integer.parseInt(cadena[x])); //Se va agregando al stack si el caracter es un numero
+				vector.Push(Integer.parseInt(cadena[x])); //Se va agregando al stack si el caracter es un numero
 			}
 			
 			catch(Exception e){ 
@@ -43,18 +43,18 @@ public class Calculadora implements I_Calculadora {
 				//Si no es un numero, es un operador, y se realiza la operacion correspondiente
 			
 				case "+":
-					resultado = (int)miPila.Pop() + (int)miPila.Pop();
-					miPila.Push(resultado); //Se almacena el resultado en la pila
+					resultado = (int)vector.Pop() + (int)vector.Pop();
+					vector.Push(resultado); //Se almacena el resultado en la pila
 					break;
 					
 				case "*":
-					resultado = (int)miPila.Pop() * (int)miPila.Pop();
-					miPila.Push(resultado);
+					resultado = (int)vector.Pop() * (int)vector.Pop();
+					vector.Push(resultado);
 					break;
 					
 				case "/":
-					resultado = (int)miPila.Pop() / (int)miPila.Pop();
-					miPila.Push(resultado);
+					resultado = (int)vector.Pop() / (int)vector.Pop();
+					vector.Push(resultado);
 					break;
 				   }
 	             }	

@@ -1,7 +1,7 @@
 import java.util.Vector;
 
 /**
- * @author Diego Soler, Gladys de la Roca, Rene Olivet
+ * @author Diego Soler, Fredy España
  * Clase Pila
  * Clase que maneja la pila
  * @version 24/07/2016
@@ -9,7 +9,7 @@ import java.util.Vector;
  */
 
 
-public class StackVector<E> implements I_Pila<E> {
+public class StackVector<E> extends AbstractVector implements I_Pila<E> {
 	
 	//Atributos
 	private Vector<E> miPila;

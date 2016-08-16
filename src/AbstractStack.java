@@ -1,4 +1,4 @@
-public abstract class AbstractStack{
+public abstract class AbstractStack<E>  implements I_Lista<E> {
     protected int count;
     
     public int size(){

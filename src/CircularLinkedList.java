@@ -2,13 +2,8 @@ import java.util.Iterator;
 
 
 
-/**
- *
- * @author Olivet
- * @param <E>
- */
 
-public class CircularLinkedList<E> extends AbstractList implements I_Lista<E> {
+public class CircularLinkedList<E> extends AbstractStack<E> {
 
 	private Node<E> tail;
 	private int count;

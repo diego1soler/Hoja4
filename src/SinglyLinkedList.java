@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class SinglyLinkedList<E> extends AbstractStack implements I_Lista<E> {
+public class SinglyLinkedList<E> extends AbstractStack<E> {
     
     private Node<E> head;
     private Node<E> temp;
@@ -37,19 +37,6 @@ public class SinglyLinkedList<E> extends AbstractStack implements I_Lista<E> {
         val = head.getValue();
         return val;
     }
-
-	@Override
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
 
 	@Override
 	public void addLast(E value) {
@@ -140,5 +127,8 @@ public class SinglyLinkedList<E> extends AbstractStack implements I_Lista<E> {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+
     
 }

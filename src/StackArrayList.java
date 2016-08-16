@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class StackArrayList<E> extends AbstractStack implements I_Pila<E> {
+public class StackArrayList<E> extends AbstractStack<E> {
 	   
 		private ArrayList<E> pila;
 	    
@@ -9,41 +9,116 @@ public class StackArrayList<E> extends AbstractStack implements I_Pila<E> {
 	        pila = new ArrayList<>();
 	        count = 0;
 	    }
-	    /**
-	     *
-	     * @param e elemento tipo E
-	     */
-	    @Override
-	    public void Push(E e){
-	        pila.add(e); //Agrega en ultima posicion e incrementa size en 1
-	        count++;
-	    }
-	   
+	  
 		@Override
-		public E Pop() {
+		public void addFirst(E value) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void addLast(E value) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public E getFirst() {
 			// TODO Auto-generated method stub
 			return null;
 		}
+
 		@Override
-		public boolean IsEmpty() {
+		public E getLast() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public E removeFirst() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public E removeLast() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public E remove(E value) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public void add(E value) {
+			// TODO Auto-generated method stub
 			
+		}
+
+		@Override
+		public E remove() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public E get() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public boolean contains(E value) {
+			// TODO Auto-generated method stub
 			return false;
 		}
+
 		@Override
-		public int Size() {
+		public int indexOf(E value) {
 			// TODO Auto-generated method stub
 			return 0;
 		}
+
 		@Override
-		public E Get() {
-			
+		public int lastIndexOf(E value) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public E get(int i) {
+			// TODO Auto-generated method stub
 			return null;
 		}
+
 		@Override
-		public void empty() {
+		public E set(int i, E o) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public void add(int i, E o) {
 			// TODO Auto-generated method stub
 			
 		}
+
+		@Override
+		public E remove(int i) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public Iterator<E> iterator() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+	  
+	
 	}
 
 

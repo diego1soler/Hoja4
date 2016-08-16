@@ -15,5 +15,7 @@ public interface I_Pila <E> {
 	public int Size();
 	public E Get();
 	public void empty();
+
+	
 	
 }

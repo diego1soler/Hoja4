@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class DoubleLinkedList <E> extends AbstractStack implements I_Lista<E>{
+public class DoubleLinkedList <E> extends AbstractStack<E>{
 	
 	private DoubleNode<E> head;
 	private DoubleNode<E> tail;

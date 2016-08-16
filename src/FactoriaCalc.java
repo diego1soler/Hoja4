@@ -2,13 +2,15 @@
 
 public class FactoriaCalc {
 
-public static <E> AbstractStack getTipo(int eleccion1,int eleccion2){
+public static <E>StackVector<E> getVector(){
+	return new StackVector<E>();
+}
+	
+
+public static <E> AbstractStack<E> getLista(int eleccion1,int eleccion2){
 	
 	//Aqui ocurre la magia
 	switch(eleccion1){
-	
-	case 1:
-	return new StackVector<E>();
 	
 	
 	case 2:
