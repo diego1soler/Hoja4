@@ -1,36 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Olivet
- */
 public class Node<E> {
     
-    public Node(E _value){
-        next = null;
-        value = _value;
+   
+    
+    protected E data;
+    protected Node<E> nextElement;
+    
+    public Node(E v, Node<E> next){
+        data = v;
+        nextElement = next;
     }
     
-    protected E value;
-    protected Node next;
+    public Node(E v){
+    	this(v,null);
+    }
     
     public void setValue(E value){
-        this.value = value;
+        data = value;
     }
     
-    public E getValue(){
-        return value;
+    
+    
+    public void setNext(Node<E> next){
+       nextElement = next;
     }
     
-    public void setNext(Node next){
-        this.next = next;
+    public Node<E> next(){
+        return nextElement;
     }
     
-    public Node getNext(){
-        return next;
+    public E value(){
+    	return data;
     }
 }
+
