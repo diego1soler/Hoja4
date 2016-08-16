@@ -12,12 +12,12 @@ import java.io.File;
 public class Calculadora implements I_Calculadora {
 	
 	//Atributos
-	
+	StackVector<Integer> miPila;
 	
 	
 	//Constructor
 	public Calculadora(){
-		miPila= new Pila<Integer>();
+		miPila= new StackVector<Integer>();
 	}
 	
 	/**
