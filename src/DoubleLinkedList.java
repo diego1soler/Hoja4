@@ -8,6 +8,6 @@
  *
  * @author Olivet
  */
-public class DoubleLinkedList {
+public class DoubleLinkedList <E>{
     
 }

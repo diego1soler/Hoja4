@@ -8,6 +8,6 @@
  *
  * @author Olivet
  */
-public class CircularLinkedList {
+public class CircularLinkedList<E> {
     
 }
