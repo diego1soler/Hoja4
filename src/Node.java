@@ -14,6 +14,11 @@ public class Node<E> {
     	this(v,null);
     }
     
+    public E getValue(){
+    	return data;
+    }
+    
+    
     public void setValue(E value){
         data = value;
     }
@@ -31,5 +36,10 @@ public class Node<E> {
     public E value(){
     	return data;
     }
+
+	public Node<E> getNext() {
+		
+		return nextElement;
+	}
 }
 
