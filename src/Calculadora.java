@@ -21,11 +21,44 @@ public class Calculadora implements I_Calculadora {
 	}
 	
 	
-	@Override
-	public int CalcularLista(String cadena, AbstractStack<Integer> lista) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	    @Override
+		public int CalcularLista(String direccion, AbstractStack<Integer> list) {
+			int resultado = 0;
+					
+					String [] cadena = direccion.split(" "); //Se convierte la operacion en un array de caracteres, exceptuando el espacio entre operadores
+					for (int x = 0; x<cadena.length; x++){
+						
+						try{
+							list.addFirst(Integer.parseInt(cadena[x])); //Se va agregando al stack si el caracter es un numero
+						}
+						
+						catch(Exception e){ 
+							
+							switch(cadena[x]) {
+							
+							//Si no es un numero, es un operador, y se realiza la operacion correspondiente
+						
+							case "+":
+								resultado = (int)list.getFirst() + (int)list.getFirst();
+								list.addFirst(resultado); //Se almacena el resultado en la pila
+								break;
+								
+							case "*":
+								resultado = (int)list.getFirst() * (int)list.getFirst();
+								list.addFirst(resultado);
+								break;
+								
+							case "/":
+								resultado = (int)list.getFirst() / (int)list.getFirst();
+								list.addFirst(resultado);
+								break;
+							   }
+				             }	
+					      }
+					
+						return resultado; //Retorna el resultado de la operacion del archivo de texto
+				       }
+	
 	
 	/**
 	*Calcula la operacion POST FIX

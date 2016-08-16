@@ -32,7 +32,7 @@ public class Main {
 		}
 		
 		AbstractStack L = FactoriaCalc.getLista(opcion, opcion2);
-		System.out.println("El resultado de tu operación es: "+Calculadora.CalcularLista(cadena,L));
+		System.out.println("El resultado de tu operación es: "+Calculadora.CalcularLista(cadena, L));
 		                      
 		
 		

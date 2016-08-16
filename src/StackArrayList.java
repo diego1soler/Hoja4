@@ -18,7 +18,7 @@ public class StackArrayList<E> extends AbstractStack<E> {
 	  
 		@Override
 		public void addFirst(E value) {
-			// TODO Auto-generated method stub
+			pila.add(value);
 			
 		}
 
@@ -30,7 +30,7 @@ public class StackArrayList<E> extends AbstractStack<E> {
 
 		@Override
 		public E getFirst() {
-			// TODO Auto-generated method stub
+	
 			return null;
 		}
 

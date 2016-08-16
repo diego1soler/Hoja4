@@ -11,6 +11,7 @@ public interface I_Calculadora {
 	public String toString();
 	public String LeerArchivo (String direccion);
 	public int CalcularVector(String cadena,StackVector<Integer> vector);
-	public int CalcularLista(String cadena, AbstractStack<Integer> lista);
+	public int CalcularLista(String direccion, AbstractStack<Integer> list);
+	
 }
  
