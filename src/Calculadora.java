@@ -12,11 +12,12 @@ import java.io.File;
 public class Calculadora implements I_Calculadora {
 	
 	//Atributos
-	private Pila miPila;
+	
+	
 	
 	//Constructor
 	public Calculadora(){
-		miPila= new Pila();
+		miPila= new Pila<Integer>();
 	}
 	
 	/**
@@ -24,7 +25,7 @@ public class Calculadora implements I_Calculadora {
 	*@param String: vector
 	*/
 	@Override
-	public int Calcular(String vector) {
+	public int CalcularVector(String vector) {
 		
 		int resultado = 0;
 		
@@ -95,6 +96,12 @@ public class Calculadora implements I_Calculadora {
 		
 		
 		return linea;
+	}
+
+	@Override
+	public int CalcularLista(String vector) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 }

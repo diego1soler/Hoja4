@@ -5,16 +5,17 @@ import java.util.Vector;
  * Clase Pila
  * Clase que maneja la pila
  * @version 24/07/2016
+ * @param <E>
  */
 
 
-public class Pila<E> implements I_Pila<E> {
+public class StackVector<E> implements I_Pila<E> {
 	
 	//Atributos
 	private Vector<E> miPila;
 
 	//Constructor
-	public Pila(){
+	public StackVector(){
 		miPila = new Vector<E>();
 	}
 	
@@ -67,6 +68,12 @@ public class Pila<E> implements I_Pila<E> {
 	public E Get() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void empty() {
+		// TODO Auto-generated method stub
+		
 	}
 }
 	
