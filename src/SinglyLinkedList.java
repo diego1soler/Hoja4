@@ -20,8 +20,7 @@ public class SinglyLinkedList<E> extends AbstractStack implements I_Lista<E> {
     @Override
     public void addFirst(E e) {
         temp = head;
-        head = new Node();
-        head.setValue(e);
+        head = new Node(e);
         head.setNext(temp);
         count++;
     }

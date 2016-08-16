@@ -10,8 +10,9 @@
  */
 public class Node<E> {
     
-    public Node(){
-        
+    public Node(E _value){
+        next = null;
+        value = _value;
     }
     
     protected E value;
