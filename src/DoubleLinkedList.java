@@ -1,5 +1,12 @@
 import java.util.Iterator;
 
+
+/**
+ * @author Diego Soler, Fredy Espana
+ * Clase DoubleLinkedList
+ * @version 15/08/2016
+ */
+
 public class DoubleLinkedList <E> extends AbstractStack<E>{
 	
 	private DoubleNode<E> head;

@@ -1,11 +1,11 @@
 import java.util.Iterator;
 
 /**
- * @author Estructura de Datos
- * @version 0.0
- * @date 24/07/2016
- * ADT para Listas
+ * @author Diego Soler, Fredy Espana
+ * Clase I_Lista
+ * @version 15/08/2016
  */
+
 public interface I_Lista<E> 
 {
 

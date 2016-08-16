@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+ * @author Diego Soler, Fredy Espana
+ * Clase ArrayList
+ * @version 15/08/2016
+ */
+
 public class StackArrayList<E> extends AbstractStack<E> {
 	   
 		private ArrayList<E> pila;

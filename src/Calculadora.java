@@ -2,10 +2,10 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.File;
 /**
- * @author Diego Soler, Gladys de la Roca, Rene Olivet
+ * @author Diego Soler, Fredy Espana
  * Clase Calculadora
  * Clase que maneja la calculadora
- * @version 24/07/2016
+ * @version 15/08/2016
  */
 
 
@@ -18,6 +18,13 @@ public class Calculadora implements I_Calculadora {
 	//Constructor
 	public Calculadora(){
 		miPila= new StackVector<Integer>();
+	}
+	
+	
+	@Override
+	public int CalcularLista(String cadena, AbstractStack<Integer> lista) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 	/**
@@ -98,10 +105,5 @@ public class Calculadora implements I_Calculadora {
 		return linea;
 	}
 
-	@Override
-	public int CalcularLista(String vector) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 	
 }

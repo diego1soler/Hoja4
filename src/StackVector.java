@@ -1,11 +1,9 @@
 import java.util.Vector;
 
 /**
- * @author Diego Soler, Fredy España
- * Clase Pila
- * Clase que maneja la pila
- * @version 24/07/2016
- * @param <E>
+ * @author Diego Soler, Fredy Espana
+ * Clase StackVector
+ * @version 15/08/2016
  */
 
 

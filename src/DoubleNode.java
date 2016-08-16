@@ -1,7 +1,12 @@
 
 public class DoubleNode<E> {
 
-
+	/**
+	 * @author Diego Soler, Fredy Espana
+	 * Clase DoubleNode
+	 * @version 15/08/2016
+	 */
+	
 public DoubleNode(E _value){
     next = null;
     prev = null;

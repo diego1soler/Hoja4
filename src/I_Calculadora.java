@@ -1,17 +1,16 @@
 
 /**
- * @author Diego Soler, Gladys de la Roca, Rene Olivet
+ * @author Diego Soler, Fredy Espana
  * Clase I_Calculadora
- * Interfaz de la calculadora
- * @version 24/07/2016
+ * @version 15/08/2016
  */
 
 public interface I_Calculadora {
 
 	//Metodos de la interfaz
-	public int CalcularLista(String vector);
 	public String toString();
 	public String LeerArchivo (String direccion);
-	int CalcularVector(String cadena,StackVector<Integer> vector);
+	public int CalcularVector(String cadena,StackVector<Integer> vector);
+	public int CalcularLista(String cadena, AbstractStack<Integer> lista);
 }
  

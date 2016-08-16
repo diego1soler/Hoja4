@@ -1,7 +1,11 @@
 import java.util.Iterator;
 
 
-
+/**
+ * @author Diego Soler, Fredy Espana
+ * Clase CircularLinkedList
+ * @version 15/08/2016
+ */
 
 public class CircularLinkedList<E> extends AbstractStack<E> {
 

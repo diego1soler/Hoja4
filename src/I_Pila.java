@@ -1,8 +1,7 @@
 /**
- * @author Diego Soler, Gladys de la Roca, Rene Olivet
+ * @author Diego Soler, Fredy Espana
  * Clase I_Pila
- * Interfaz de la Pila
- * @version 24/07/2016
+ * @version 15/08/2016
  */
 
 

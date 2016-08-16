@@ -1,16 +1,11 @@
-import java.util.List;
 import java.util.Scanner;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * @author Diego Soler, Fredy Espana
+ * Clase Main
+ * @version 15/08/2016
  */
 
-/**
- *
- * @author Olivet
- */
 public class Main {
 	public static  <E> void main(String[] args) {
 
@@ -27,6 +22,7 @@ public class Main {
 		if(opcion==1){
 			StackVector V = FactoriaCalc.getVector();
 			System.out.println("El resultado de tu operación es: "+Calculadora.CalcularVector(cadena,V));
+			System.exit(1);
 	
 		}
 		
@@ -36,6 +32,7 @@ public class Main {
 		}
 		
 		AbstractStack L = FactoriaCalc.getLista(opcion, opcion2);
+		System.out.println("El resultado de tu operación es: "+Calculadora.CalcularLista(cadena,L));
 		                      
 		
 		

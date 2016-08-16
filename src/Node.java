@@ -1,3 +1,9 @@
+/**
+ * @author Diego Soler, Fredy Espana
+ * Clase Node
+ * @version 15/08/2016
+ */
+
 public class Node<E> {
     
    

@@ -1,6 +1,10 @@
 import java.util.Iterator;
 
-public class SinglyLinkedList<E> extends AbstractStack<E> {
+/**
+ * @author Diego Soler, Fredy Espana
+ * Clase SinglyLinkedList
+ * @version 15/08/2016
+ */ class SinglyLinkedList<E> extends AbstractStack<E> {
     
     private Node<E> head;
     private Node<E> temp;

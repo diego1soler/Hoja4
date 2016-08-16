@@ -1,7 +1,12 @@
-
+/**
+ * @author Diego Soler, Fredy Espana
+ * Clase Factory
+ * @version 15/08/2016
+ */
 
 public class FactoriaCalc {
 
+	
 public static <E>StackVector<E> getVector(){
 	return new StackVector<E>();
 }
